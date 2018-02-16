@@ -1,3 +1,12 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 4rem;
+  color: #000;
+}
+
 body {
   font-family: brandon-grotesque, sans-serif;
   position: relative;
@@ -78,6 +87,8 @@ section {
 footer {
   background-color: #EEEEEE;
   height: 100%;
+  display: flex;
+  margin: 0 auto;
 }
 
 .footer-brand {
@@ -95,6 +106,7 @@ footer {
 
 .center {
   text-align: center;
+  margin: auto;
 }
 
 .navbar {
@@ -338,7 +350,15 @@ tr:nth-child(even) {
 	td {
 		border-bottom: 1px solid #eee;
 	}
-  td:nth-of-type(3)::after { content: " Participants"; }
+  td:nth-of-type(4) {
+    border-bottom: none;
+  }
+  td:nth-of-type(3)::after {
+    content: " Participants";
+  }
+  #map {
+    margin: 20px auto;
+  }
 }
 
 @media (min-width: 768px) {
