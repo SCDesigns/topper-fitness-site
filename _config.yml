@@ -10,7 +10,7 @@ collections:
     output: true
 email: topperfitness@gmail.com
 description: Life at the TOP
-baseurl: ''
+baseurl: 
 url: http://topperfitness.com
 facebook_username: TopperFitness
 sass:
