@@ -37,7 +37,7 @@ layout: default
 			<div class="center">
 				<div class="team-item">
 				  <div class="team-image">
-				    <img src="./assets/img/trainers/kevin.jpg" class="trainer-img"/>
+				    <img src="./assets/img/trainers/kevin.jpg" alt="Kevin Topper" class="trainer-img"/>
 				  </div>
 				  <div class="text">
 				    <h4>OWNER / DIRECTOR OF TRAINING</h4>
@@ -49,7 +49,7 @@ layout: default
 				</div>
 				<div class="team-item">
 				  <div class="team-image">
-				    <img src="./assets/img/trainers/cinde.jpg" class="trainer-img"/>
+				    <img src="./assets/img/trainers/cinde.jpg" alt="Cinde Topper" class="trainer-img"/>
 				  </div>
 				  <div class="text">
 				    <h4>RN, BSN, OWNER / DIRECTOR: SPECIAL POPULATIONS TRAINING</h4>
@@ -62,7 +62,7 @@ layout: default
 				</div>
 				<div class="team-item">
 				  <div class="team-image">
-				    <img src="./assets/img/trainers/jen.jpg" class="trainer-img"/>
+				    <img src="./assets/img/trainers/jen.jpg" alt="Jennifer Wilso" class="trainer-img"/>
 				  </div>
 				  <div class="text">
 				    <h4>TRAINER & GROUP CLASS INSTRUCTOR</h4>
@@ -74,7 +74,7 @@ layout: default
 				</div>
 				<div class="team-item">
 				  <div class="team-image">
-				    <img src="./assets/img/trainers/darci.jpg" class="trainer-img"/>
+				    <img src="./assets/img/trainers/darci.jpg" alt="Darci Hill" class="trainer-img"/>
 				  </div>
 				  <div class="text">
 				    <h4>FACILITY MANAGER / GROUP CLASS INSTRUCTOR</h4>
@@ -86,7 +86,7 @@ layout: default
 				</div>
 				<div class="team-item">
 				  <div class="team-image">
-				    <img src="./assets/img/trainers/branden.jpg" class="trainer-img"/>
+				    <img src="./assets/img/trainers/branden.jpg" alt="Branden Peloso" class="trainer-img"/>
 				  </div>
 				  <div class="text">
 				    <h4>MS ATHLETIC CONDITIONING / GROUP CLASS INSTRUCTOR</h4>
@@ -98,7 +98,7 @@ layout: default
 				</div>
 				<div class="team-item">
 				  <div class="team-image">
-				    <img src="./assets/img/trainers/tyler.jpg" class="trainer-img"/>
+				    <img src="./assets/img/trainers/tyler.jpg" alt="Tyler Morgan" class="trainer-img"/>
 				  </div>
 				  <div class="text">
 				    <h4>BS EXERCISE SCIENCE / TRAINER FOR SPECIAL POPULATIONS</h4>
@@ -113,7 +113,7 @@ layout: default
 				</div>
 				<div class="team-item">
 				  <div class="team-image">
-				    <img src="./assets/img/trainers/mike.jpg" class="trainer-img"/>
+				    <img src="./assets/img/trainers/mike.jpg" alt="Mike Huey" class="trainer-img"/>
 				  </div>
 				  <div class="text">
 				    <h4>GROUP CLASS INSTRUCTOR</h4>
@@ -125,7 +125,7 @@ layout: default
 				</div>
 				<div class="team-item">
 				  <div class="team-image">
-				    <img src="./assets/img/trainers/donna.jpg" class="trainer-img"/>
+				    <img src="./assets/img/trainers/donna.jpg" alt="Donna Minotti" class="trainer-img"/>
 				  </div>
 				  <div class="text">
 				    <h4>ATHLETIC CONDITIONING / GROUP CLASS INSTRUCTOR</h4>
@@ -135,12 +135,27 @@ layout: default
 				    <p>Donna Minotti is a Ohio University graduate with her Masters Degree in Athletic Coaching Education. Over the past 25 years, she has worked as a health and wellness coordinator, fitness professional, and group fitness instructor. More so, Donna was a Master Spinning Instructor and International Presenter for spinning with Mad Dogg Athletics. In addition to her impressive resume, she holds certifications from the National Academy of Sports Medicine,AMerican Exercise Council, and Aerobic and Fitness Association ofAMerica. Donna also enjoys competing in cycling, running, and swimming.</p>
 				  </div>
 				</div>
+				<div class="team-item">
+					<div class="team-image">
+						<img src="./assets/img/trainers/angela.jpg" alt="Angela Amato" class="trainer-img"/>
+					</div>
+					<div class="text">
+						<h4>GROUP CLASS INSTRUCTOR</h4>
+						<h3 class="one-line">
+							Angela<br>Amato
+						</h3>
+						<p>Angela started her fitness journey at an early age. As an overweight and frustrated student, she learned about nutrition and exercise to achieve her fitness goals.  In college, she began teaching group exercise classes at her dorm. After many years of recreational outdoor cycling, she went inside and took an indoor cycling class. It was love at first ride. Mad Dogg Athletic, RealRyder, and Schwinn certified, she has been teaching indoor cycling for 10 years and enjoys every minute of creating and coaching a class. When she’s not teaching on the bike, you can find her walking on the beach, strength training, cooking, volunteering or spending time with her family.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section id="classes">
 		<div class="container">
 			<h3 class="title blk">Classes</h3>
+			<div style="background-color: #000; padding: 20px;">
+				<p class="about-text" style="text-align: left">Our separate 2000 square foot Top Deck allows us to offer an assortment of fitness classes.</p>
+			</div>
 			<table style="max-width: 1200px; margin: 30px auto;">
 			  <tr id="header">
 			    <th style="padding: 20px;">Class</th>
@@ -148,55 +163,72 @@ layout: default
 			    <th style="padding: 20px;">Participants</th>
 			    <th style="padding: 20px;">Description</th>
 			  </tr>
-			  <tr>
-			    <td style="padding: 20px;">TRX</td>
-			    <td style="padding: 20px;">30 min</td>
-			    <td style="padding: 20px;">8</td>
-			    <td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
-			  </tr>
-			  <tr>
+			  <!-- <tr>
 			    <td style="padding: 20px;">Basic Strength</td>
 			    <td style="padding: 20px;">30 min</td>
 			    <td style="padding: 20px;">8</td>
 			    <td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
-			  </tr>
+			  </tr> -->
+				<tr>
+					<td style="padding: 20px;">Body Sculpting</td>
+					<td style="padding: 20px;">30 min</td>
+					<td style="padding: 20px;">8</td>
+					<td style="padding: 20px;">This half hour class concentrates on building and toning individual muscle groups using free and body weight. All ages and abilities are able to participate in this class.</td>
+				</tr>
+				<tr>
+					<td style="padding: 20px;">Functional Circuit Training</td>
+					<td style="padding: 20px;">45 min</td>
+					<td style="padding: 20px;">8</td>
+					<td style="padding: 20px;">Tone up and burn fat with this constant mix of exercises. No two classes will be exactly the same. Class builds strength, improves balance, and is fantastic cardio training. This class is what is needed to take your workout to the next level.</td>
+				</tr>
+				<tr>
+					<td style="padding: 20px;">Semi-Private</td>
+					<td style="padding: 20px;">45 min</td>
+					<td style="padding: 20px;">4</td>
+					<td style="padding: 20px;">The semi-personal training class is a mix of exercises incorporating machines, bodyweight and free weight exercises.  This 45-minute personal training session is limited to 4 people so that the trainer can provide a work out that meets all participants’ levels of experience.
+*In the case of multiple wait-list participants the decision of an additional class held during the scheduled time will be made by management. In this case the wait-list participants will be notified via phone call the night before.
+</td>
+				</tr>
+				<tr>
+					<td style="padding: 20px;">Slide Board</td>
+					<td style="padding: 20px;">45 min</td>
+					<td style="padding: 20px;">8</td>
+					<td style="padding: 20px;">This is a challenging class! It incorporates skating with strength training using several functional tools, It is the ultimate calorie burner!</td>
+				</tr>
 			  <tr>
-			    <td style="padding: 20px;">TOP Cycle</td>
-			    <td style="padding: 20px;">30 min</td>
+			    <td style="padding: 20px;">TOP Spin</td>
+			    <td style="padding: 20px;">30 min and 45 min</td>
 			    <td style="padding: 20px;">8</td>
-			    <td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
+			    <td style="padding: 20px;">Not your typical indoor cycling class! We are the only fitness facility in the area to use the innovative Life Fitness IC7 Indoor Cycle with the Coach by Color System. Coach by Color takes into consideration your individual fitness level so that beginners can take class alongside more seasoned cyclists and everyone gets a fantastic workout. The TOP offers both 30 minute and 45 minute rides.</td>
 			  </tr>
 			  <tr>
 			    <td style="padding: 20px;">TOP HIIT</td>
 			    <td style="padding: 20px;">30 min</td>
 			    <td style="padding: 20px;">8</td>
-			    <td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
+			    <td style="padding: 20px;">Top HIIT is an enhanced form of interval training alternating between periods of short, intense anaerobic exercise and recovery. This class provides improved cardiovascular conditioning, glucose metabolism and fat burning. Top HIIT is intense and not for the faint of heart, but it is FUN!</td>
 			  </tr>
-			  <tr>
-			    <td style="padding: 20px;">TOP Slide</td>
-			    <td style="padding: 20px;">45 min</td>
-			    <td style="padding: 20px;">8</td>
-			    <td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
-			  </tr>
-			  <tr>
-			    <td style="padding: 20px;">Semi-Private</td>
-			    <td style="padding: 20px;">45 min</td>
-			    <td style="padding: 20px;">4</td>
-			    <td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
-			  </tr>
-			  <tr>
-			    <td style="padding: 20px;">Functional Circuit Training</td>
-			    <td style="padding: 20px;">45 min</td>
-			    <td style="padding: 20px;">8</td>
-			    <td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
-			  </tr>
-			  <tr>
+				<tr>
+					<td style="padding: 20px;">TRX</td>
+					<td style="padding: 20px;">30 min</td>
+					<td style="padding: 20px;">8</td>
+					<td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
+				</tr>
+			  <!-- <tr>
 			    <td style="padding: 20px;">Park n Spin</td>
 			    <td style="padding: 20px;">45 min</td>
 			    <td style="padding: 20px;">8</td>
 			    <td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
-			  </tr>
+			  </tr> -->
 			</table>
+			<div style="background-color: #000; padding: 20px;">
+				<ul style="text-align: left">
+					<h3>Plans</h3>
+					<li>Single Class or Discounted Package Rates</li>
+					<li>Discounted Rates on Individual and Class Packages for Gym Members</li>
+					<li>Unlimited Class Memberships</li>
+					<li>*Gym Membership NOT Required for Class Participation*</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 	<section id="schedule">

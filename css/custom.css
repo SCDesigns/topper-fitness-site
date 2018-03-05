@@ -318,8 +318,8 @@ tr:nth-child(even) {
     margin: 1.25rem auto;
   }
   .team-item {
-    max-width: 200px;
-    margin: 20px auto;
+    max-width: 300px;
+    margin: 20px;
   }
   .text h4 {
     margin-bottom: 0.25rem;
@@ -330,7 +330,7 @@ tr:nth-child(even) {
   .team-item {
     max-width: 250px;
     display: inline-block;
-    margin: 20px 10px;
+    margin: 20px;
   }
   .one-line {
     margin: 25px 0 0;
@@ -347,9 +347,12 @@ tr:nth-child(even) {
 	table, tbody, th, td, tr {
 		display: block;
 	}
-	td {
+	td:nth-of-type(odd) {
 		border-bottom: 1px solid #eee;
 	}
+  td:nth-of-type(even) {
+    border-bottom: 1px solid #9E9E9E;
+  }
   td:nth-of-type(4) {
     border-bottom: none;
   }
