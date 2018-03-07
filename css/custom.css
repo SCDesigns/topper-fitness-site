@@ -319,7 +319,7 @@ tr:nth-child(even) {
   }
   .team-item {
     max-width: 300px;
-    margin: 20px;
+    margin: 20px auto;
   }
   .text h4 {
     margin-bottom: 0.25rem;
