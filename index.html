@@ -14,20 +14,49 @@ layout: default
 			<h3 class="title blk">About</h3>
 			<div class="about-content">
 				<p class="about-text">Topper Fitness offers general memberships, specialized personal training and popular small
-				  group fitness classes for our clients. Topper Fitness features state of the art LifeFitness
+				  group fitness classes for our clients. Topper Fitness features state of the art PreCore and LifeFitness
 				  cardio and strength training equipment in addition to free weights, TRX and other multiple
-				  tools of training.</p>
-					<div class="row auto">
-						<div class="col-lg-4">
-							<img src="./assets/img/about/about-1.jpg" class="about-img"/>
-						</div>
-						<div class="col-lg-4">
-							<img src="./assets/img/about/about-2.jpg" class="about-img"/>
-						</div>
-						<div class="col-lg-4">
-							<img src="./assets/img/about/about-3.jpg" class="about-img"/>
-						</div>
-					</div>
+				  tools of training.
+				</p>
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url('./assets/img/about/about-0.jpg')"></div>
+				        <div class="swiper-slide" style="background-image:url('./assets/img/about/about-1.jpg')"></div>
+				        <div class="swiper-slide" style="background-image:url('./assets/img/about/about-2.jpg')"></div>
+				        <div class="swiper-slide" style="background-image:url('./assets/img/about/about-3.jpg')"></div>
+								<div class="swiper-slide" style="background-image:url('./assets/img/about/about-4.jpg')"></div>
+				    </div>
+				    <div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<h3 class="title blk">The Topper Fitness Difference</h3>
+			<div class="about-content">
+				<p class="about-text">Topper Fitness is not your typical gym...</p>
+				<ul class="bullets">
+					<li>Impeccably Clean</li>
+					<li>Updated, Well-maintained Equipment</li>
+					<li>Welcoming, Bright, Cheerful, Spa-like Atmosphere</li>
+					<li>Educated, Professional and Motivating Personal Trainers & Class Instructors</li>
+					<li>Friendly and Helpful Front Desk Staff</li>
+					<li>Beautifully Decorated and Well-Stocked Locker Rooms with Showers</li>
+					<li>Registered Nurse on Staff</li>
+				</ul>
+			</div>
+			<h3 class="title blk">Memberships</h3>
+			<div class="about-content">
+				<ul class="bullets">
+					<li>Month to Month</li>
+					<li>3 Months</li>
+					<li>6 Months</li>
+					<li>Yearly</li>
+					<li>Day Passes</li>
+					<li>Weekly Passes</li>
+					<li>Monthly Unlimited Class (Includes Top Spin, but excludes Semi-Private classes)</li>
+					<li>Corporate</li>
+					<li>Reduced rates for Multi-month, Couple, Family and Corporate Memberships</li>
+					<li>NO Initiation or End-of-the Year Gym Refurbishing Fees</li>
+					<li>NO Auto-deduction from Checking or Credit Card Accounts</li>
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -154,7 +183,7 @@ layout: default
 		<div class="container">
 			<h3 class="title blk">Classes</h3>
 			<div style="background-color: #000; padding: 20px;">
-				<p class="about-text" style="text-align: left">Our separate 2000 square foot Top Deck allows us to offer an assortment of fitness classes.</p>
+				<p class="about-text" style="text-/align: left">Our separate 2000 square foot Top Deck allows us to offer an assortment of fitness classes.</p>
 			</div>
 			<table style="max-width: 1200px; margin: 30px auto;">
 			  <tr id="header">
@@ -221,7 +250,7 @@ layout: default
 			  </tr> -->
 			</table>
 			<div style="background-color: #000; padding: 20px;">
-				<ul style="text-align: left">
+				<ul class="bullets">
 					<h3>Plans</h3>
 					<li>Single Class or Discounted Package Rates</li>
 					<li>Discounted Rates on Individual and Class Packages for Gym Members</li>
@@ -239,9 +268,8 @@ layout: default
 				<div class="col-lg-6 offset-3">
 					<h1 class="loc-info-header">Check Our Schedule & Book a Class on Mindbody</h1>
 					<hr style="margin: 20px auto; width: 150px; height: 5px; background-color: #FFF; border-top: none;">
-						<!-- <img src="./assets/img/app-store.svg" style="height: 40px"/> -->
 					<a href="https://clients.mindbodyonline.com/classic/ws?studioid=195885" target="_blank">
-						<img src="./assets/img/mindbody-button.svg">
+						<img id="mindbody-button" src="./assets/img/mindbody-button.svg">
 					</a>
 				</div>
 			</div>
@@ -327,13 +355,13 @@ layout: default
 	<script>
 		$('body').scrollspy({ target: '#topper-nav' })
 		function initMap() {
-			var uluru = {lat: 26.958842, lng: -80.086298};
+			var the_top = {lat: 26.958842, lng: -80.086298};
 			var map = new google.maps.Map(document.getElementById('map'), {
 				zoom: 17,
-				center: uluru
+				center: the_top
 			});
 			var marker = new google.maps.Marker({
-				position: uluru,
+				position: the_top,
 				map: map
 			});
 		}
@@ -341,4 +369,18 @@ layout: default
 	<script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_IStfIJ7TFmyLZLlY_DTLUUU8TeiGFEo&callback=initMap">
 	</script>
+	<!-- SwiperJS Plugin (Used for Image Carousel) -->
+	<!-- Swiper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+	var swiper = new Swiper('.swiper-container', {
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination',
+			dynamicBullets: true,
+		},
+	});
+  </script>
 </body>

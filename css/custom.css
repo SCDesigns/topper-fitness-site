@@ -230,6 +230,48 @@ footer {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
+.swiper-container {
+    width: 1200px;
+    height: 600px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-repeat:no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #FFF !important;
+    width: 20px;
+}
+
+.bullets {
+  text-align: left;
+  font-size: 20px;
+}
+
 .text {
 	position: absolute;
 	bottom: 0;
@@ -371,6 +413,9 @@ tr:nth-child(even) {
 @media (min-width: 768px) {
   .mobile {
     display: none;
+  }
+  #mindbody-button {
+    width: 175px;
   }
   .hero hr {
     display: inline-block;
