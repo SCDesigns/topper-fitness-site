@@ -450,7 +450,7 @@ tr:nth-child(even) {
     min-height: 1050px;
   }
   .carousel {
-    width: 750px;
-    height: 375px;
+    width: 700px;
+    height: 350px;
   }
 }
