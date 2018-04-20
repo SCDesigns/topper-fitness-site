@@ -231,12 +231,16 @@ footer {
 }
 
 .swiper-container {
-    width: 1200px;
-    height: 600px;
+  height: 100%;
+  width: 100%;
 }
+
+.carousel {
+  margin: 0 auto;
+}
+
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
   background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -349,6 +353,10 @@ tr:nth-child(even) {
   tr, td {
     padding: 20px;
   }
+  .carousel {
+    width: 300px;
+    height: 150px;
+  }
 }
 
 @media (max-width: 692px) {
@@ -369,6 +377,13 @@ tr:nth-child(even) {
   }
 }
 
+@media (min-width: 500px) {
+  .carousel {
+    width: 550px;
+    height: 275px;
+  }
+}
+
 @media (min-width: 692px) {
   .team-item {
     max-width: 250px;
@@ -377,6 +392,10 @@ tr:nth-child(even) {
   }
   .one-line {
     margin: 25px 0 0;
+  }
+  .carousel {
+    width: 615px;
+    height: 307px;
   }
 }
 
@@ -413,8 +432,7 @@ tr:nth-child(even) {
 @media (min-width: 768px) {
   .mobile {
     display: none;
-  }
-  #mindbody-button {
+  }mindbody-button {
     width: 175px;
   }
   .hero hr {
@@ -429,5 +447,9 @@ tr:nth-child(even) {
   }
   #classes {
     min-height: 1050px;
+  }
+  .carousel {
+    width: 750px;
+    height: 375px;
   }
 }
