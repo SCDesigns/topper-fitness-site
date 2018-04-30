@@ -377,14 +377,14 @@ tr:nth-child(even) {
 	table, tbody, th, td, tr {
 		display: block;
 	}
-	td:nth-of-type(odd) {
+	tr:nth-child(odd) td {
 		border-bottom: 1px solid #eee;
-	}
-  td:nth-of-type(even) {
-    border-bottom: 1px solid #9E9E9E;
+  }
+  tr:nth-child(even) td {
+		border-bottom: 1px solid #9E9E9E;
   }
   td:nth-of-type(4) {
-    border-bottom: none;
+    border-bottom: none !important;
   }
   td:nth-of-type(3)::after {
     content: " Participants";
