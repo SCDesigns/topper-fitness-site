@@ -22,12 +22,12 @@ layout: default
 			<div class="carousel">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
-							<div class="swiper-slide" style="background-image:url('./assets/img/about/about-0.jpg')"></div>
-							<div class="swiper-slide" style="background-image:url('./assets/img/about/about-1.jpg')"></div>
-							<div class="swiper-slide" style="background-image:url('./assets/img/about/about-2.jpg')"></div>
-							<div class="swiper-slide" style="background-image:url('./assets/img/about/about-3.jpg')"></div>
-							<div class="swiper-slide" style="background-image:url('./assets/img/about/about-4.jpg')"></div>
-							<div class="swiper-slide" style="background-image:url('./assets/img/about/about-5.jpg')"></div>
+							<div class="swiper-slide"><img src='./assets/img/about/about-0.jpg'/></div>
+							<div class="swiper-slide"><img src='./assets/img/about/about-1.jpg'/></div>
+							<div class="swiper-slide"><img src='./assets/img/about/about-2.jpg'/></div>
+							<div class="swiper-slide"><img src='./assets/img/about/about-3.jpg'/></div>
+							<div class="swiper-slide"><img src='./assets/img/about/about-4.jpg'/></div>
+							<div class="swiper-slide"><img src='./assets/img/about/about-5.jpg'/></div>
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
@@ -378,12 +378,19 @@ layout: default
 
 	<!-- Initialize Swiper -->
 	<script>
-	var swiper = new Swiper('.swiper-container', {
-		loop: true,
-		pagination: {
-			el: '.swiper-pagination',
-			dynamicBullets: true,
-		},
-	});
-  </script>
+    var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 1,
+			spaceBetween: 30,
+      autoHeight: true, //enable auto height
+      loop: true,
+			pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
 </body>

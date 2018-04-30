@@ -110,7 +110,8 @@ footer {
 }
 
 .navbar {
-  box-shadow:0 0 15px rgba(0, 0, 0, 0.4)
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.4);
+  padding: .5rem 0;
 }
 
 .nav-link {
@@ -165,10 +166,6 @@ footer {
   margin: auto;
 }
 
-.about-content {
-  margin-bottom: 60px;
-}
-
 #about {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -176,6 +173,21 @@ footer {
   ), url(../assets/img/background.png);
   color: #EEEEEE;
   margin-bottom: 60px;
+}
+
+.swiper-container {
+  padding: 2.5rem 0;
+  height: 100% !important;
+  overflow: -webkit-paged-x !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #fff !important;
+}
+
+.swiper-slide img {
+  width: 100%;
 }
 
 .section-break {
@@ -224,52 +236,16 @@ footer {
   margin: 0;
 }
 
-.about-img {
+/* .about-img {
   max-width: 100%;
   height: auto;
   margin: 10px auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-}
-
-.swiper-container {
-  height: 100%;
-  width: 100%;
-}
+} */
 
 .carousel {
   margin: 0 auto;
-}
-
-.swiper-slide {
-  text-align: center;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  background-repeat:no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-
-.swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #FFF !important;
-    width: 20px;
+  max-width: 85%;
 }
 
 .bullets {
@@ -354,10 +330,6 @@ tr:nth-child(even) {
   tr, td {
     padding: 20px;
   }
-  .carousel {
-    width: 300px;
-    height: 150px;
-  }
 }
 
 @media (max-width: 692px) {
@@ -379,10 +351,6 @@ tr:nth-child(even) {
 }
 
 @media (min-width: 500px) {
-  .carousel {
-    width: 550px;
-    height: 275px;
-  }
 }
 
 @media (min-width: 692px) {
@@ -393,10 +361,6 @@ tr:nth-child(even) {
   }
   .one-line {
     margin: 25px 0 0;
-  }
-  .carousel {
-    width: 615px;
-    height: 307px;
   }
 }
 
@@ -433,7 +397,8 @@ tr:nth-child(even) {
 @media (min-width: 768px) {
   .mobile {
     display: none;
-  }mindbody-button {
+  }
+  mindbody-button {
     width: 175px;
   }
   .hero hr {
@@ -448,9 +413,5 @@ tr:nth-child(even) {
   }
   #classes {
     min-height: 1050px;
-  }
-  .carousel {
-    width: 700px;
-    height: 350px;
   }
 }
