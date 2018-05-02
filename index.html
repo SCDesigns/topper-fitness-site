@@ -28,6 +28,8 @@ layout: default
 							<div class="swiper-slide"><img src='./assets/img/about/about-3.jpg'/></div>
 							<div class="swiper-slide"><img src='./assets/img/about/about-4.jpg'/></div>
 							<div class="swiper-slide"><img src='./assets/img/about/about-5.jpg'/></div>
+							<div class="swiper-slide"><img src='./assets/img/about/about-6.jpg'/></div>
+							<div class="swiper-slide"><img src='./assets/img/about/about-7.jpg'/></div>
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
@@ -206,7 +208,6 @@ layout: default
 			  <tr id="header">
 			    <th style="padding: 20px;">Class</th>
 			    <th style="padding: 20px;">Duration</th>
-			    <th style="padding: 20px;">Participants</th>
 			    <th style="padding: 20px;">Description</th>
 			  </tr>
 			  <!-- <tr>
@@ -218,19 +219,16 @@ layout: default
 				<tr>
 					<td style="padding: 20px;">Body Sculpting</td>
 					<td style="padding: 20px;">30 min</td>
-					<td style="padding: 20px;">8</td>
 					<td style="padding: 20px;">This half hour class concentrates on building and toning individual muscle groups using free and body weight. All ages and abilities are able to participate in this class.</td>
 				</tr>
 				<tr>
 					<td style="padding: 20px;">Functional Circuit Training</td>
 					<td style="padding: 20px;">45 min</td>
-					<td style="padding: 20px;">8</td>
 					<td style="padding: 20px;">Tone up and burn fat with this constant mix of exercises. No two classes will be exactly the same. Class builds strength, improves balance, and is fantastic cardio training. This class is what is needed to take your workout to the next level.</td>
 				</tr>
 				<tr>
 					<td style="padding: 20px;">Semi-Private</td>
 					<td style="padding: 20px;">45 min</td>
-					<td style="padding: 20px;">4</td>
 					<td style="padding: 20px;">The semi-personal training class is a mix of exercises incorporating machines, bodyweight and free weight exercises.  This 45-minute personal training session is limited to 4 people so that the trainer can provide a work out that meets all participants’ levels of experience.
 *In the case of multiple wait-list participants the decision of an additional class held during the scheduled time will be made by management. In this case the wait-list participants will be notified via phone call the night before.
 </td>
@@ -238,31 +236,26 @@ layout: default
 				<tr>
 					<td style="padding: 20px;">Slide Board</td>
 					<td style="padding: 20px;">45 min</td>
-					<td style="padding: 20px;">8</td>
 					<td style="padding: 20px;">This is a challenging class! It incorporates skating with strength training using several functional tools, It is the ultimate calorie burner!</td>
 				</tr>
 			  <tr>
 			    <td style="padding: 20px;">TOP Spin (Featuring <a style="color: #616161;" href="https://lifefitness.com/facility/products/icg-series/ic7">LifeFitness IC7 Cycle</a>)</td>
 			    <td style="padding: 20px;">30 min and 45 min</td>
-			    <td style="padding: 20px;">8</td>
 			    <td style="padding: 20px;">Not your typical indoor cycling class! We are the only fitness facility in the area to use the innovative Life Fitness IC7 Indoor Cycle with the Coach by Color System. Coach by Color takes into consideration your individual fitness level so that beginners can take class alongside more seasoned cyclists and everyone gets a fantastic workout. The TOP offers both 30 minute and 45 minute rides.</td>
 			  </tr>
 			  <tr>
 			    <td style="padding: 20px;">TOP HIIT</td>
 			    <td style="padding: 20px;">30 min</td>
-			    <td style="padding: 20px;">8</td>
 			    <td style="padding: 20px;">Top HIIT is an enhanced form of interval training alternating between periods of short, intense anaerobic exercise and recovery. This class provides improved cardiovascular conditioning, glucose metabolism and fat burning. Top HIIT is intense and not for the faint of heart, but it is FUN!</td>
 			  </tr>
 				<tr>
 					<td style="padding: 20px;">TRX (<a style="color: #616161;" href="https://www.trxtraining.com/why-trx">About TRX<a/>)</td>
 					<td style="padding: 20px;">30 min</td>
-					<td style="padding: 20px;">8</td>
 					<td style="padding: 20px;">TRX is a training tool to help tighten your core, build lean muscle and boost metabolism. This half hour class solely uses the TRX to achieve this.</td>
 				</tr>
 			  <tr>
 			    <td style="padding: 20px;">Personal Training</td>
 			    <td style="padding: 20px;">30 Minute, 45 Minute, and Hour Sessions</td>
-			    <td style="padding: 20px;">1 or 2 (Tandem)</td>
 			    <td style="padding: 20px;">Custom designed by our trainers for the individual needs and abilities of our clients of all ages and fitness levels. We offer Concierge Training (In Home Training), Personalized Stretching, and Individual Sessions or Discounted Package Rates for these sessions.</td>
 			  </tr>
 			</table>
@@ -397,7 +390,11 @@ layout: default
 			spaceBetween: 30,
       autoHeight: true, //enable auto height
       loop: true,
-			pagination: {
+			autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },

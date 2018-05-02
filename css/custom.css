@@ -25,7 +25,6 @@ section {
 #map {
   height: 525px;
   width: 100%;
-  border: 5px solid #000;
 }
 
 .button {
@@ -138,7 +137,7 @@ footer {
 }
 
 .hero h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -151,7 +150,7 @@ footer {
 }
 
 .title {
-  padding: 20px 15px;
+  padding: 1.25rem 15px;
   margin-top: 25px;
   margin-bottom: 25px;
   font-size: 2.5rem;
@@ -159,7 +158,7 @@ footer {
   font-weight: bold;
   text-align: left;
   color: #FFF;
-  border-left: 20px solid #000;
+  border-left: 1.25rem solid #000;
 }
 
 .auto {
@@ -177,12 +176,13 @@ footer {
 
 .about-text {
   text-align: left !important;
+  font-size: 1.5rem;
 }
 
 .swiper-container {
   padding: 2.5rem 0;
-  height: 100% !important;
-  overflow: -webkit-paged-x !important;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-pagination-bullet-active {
@@ -192,10 +192,11 @@ footer {
 
 .swiper-slide img {
   width: 100%;
+  max-height: 630px;
 }
 
 .section-break {
-  margin: 20px auto;
+  margin: 1.25rem auto;
   background-color: #000;
   width: 200px;
   height: 4px;
@@ -254,7 +255,7 @@ footer {
 
 .bullets {
   text-align: left;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .text {
@@ -329,10 +330,10 @@ tr:nth-child(even) {
 @media (max-width: 500px) {
   .desc {
     text-align: center !important;
-    padding: 20px !important;
+    padding: 1.25rem !important;
   }
   tr, td {
-    padding: 20px;
+    padding: 1.25rem;
   }
 }
 
@@ -347,7 +348,7 @@ tr:nth-child(even) {
   }
   .team-item {
     max-width: 300px;
-    margin: 20px auto;
+    margin: 1.25rem auto;
   }
   .text h4 {
     margin-bottom: 0.25rem;
@@ -361,7 +362,7 @@ tr:nth-child(even) {
   .team-item {
     max-width: 250px;
     display: inline-block;
-    margin: 20px;
+    margin: 1.25rem;
   }
   .one-line {
     margin: 25px 0 0;
@@ -371,9 +372,6 @@ tr:nth-child(even) {
 @media (max-width: 768px) {
   .desktop {
     display: none;
-  }
-  .about-text {
-    font-size: 1.5rem;
   }
   thead, #header {
     display: none;
@@ -394,7 +392,7 @@ tr:nth-child(even) {
     content: " Participants";
   }
   #map {
-    margin: 20px auto;
+    margin: 1.25rem auto;
   }
 }
 
@@ -411,9 +409,6 @@ tr:nth-child(even) {
     height: 1px;
     margin: 11.5px 15px;
     background-color: #EEEEEE;
-  }
-  .about-text {
-    font-size: 2rem;
   }
   #classes {
     min-height: 1050px;
