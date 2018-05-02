@@ -278,6 +278,10 @@ footer {
   font-size: 0.80rem
 }
 
+#margin-fix {
+  margin-bottom: 0.1rem !important;
+}
+
 .team-item .team-image {
   position: relative;
 }
