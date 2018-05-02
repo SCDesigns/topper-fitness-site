@@ -393,6 +393,12 @@ tr:nth-child(even) {
   #map {
     margin: 1.25rem auto;
   }
+  .navbar-brand img {
+    padding-left: 0.5rem;
+  }
+  .navbar-toggler {
+    margin-right: 0.5rem;
+  }
 }
 
 @media (min-width: 768px) {
