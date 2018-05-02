@@ -256,7 +256,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	background-color: #fff;
-	overflow: hidden;
+	overflow-y: scroll;
 	max-height: 84px;
 	transition: all .6s ease-in-out;
 	padding: 7.5px 7.5px 13px;
@@ -346,6 +346,9 @@ tr:nth-child(even) {
   .text h4 {
     margin-bottom: 0.25rem;
   }
+  .team-item p {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 500px) {
@@ -359,6 +362,9 @@ tr:nth-child(even) {
   }
   .one-line {
     margin: 25px 0 0;
+  }
+  .team-item p {
+    font-size: 1rem;
   }
 }
 
