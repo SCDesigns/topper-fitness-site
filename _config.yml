@@ -1,0 +1,25 @@
+---
+title: Topper Fitness
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  site:
+    title: Site
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: topperfitness@gmail.com
+description: Life at the TOP
+baseurl: 
+url: http://topperfitness.com
+facebook_username: TopperFitness
+sass:
+  sass_dir: _sass
+include:
+- _pages
+markdown: kramdown
+plugins:
+- jekyll-feed
